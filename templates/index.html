@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Emotion Detector</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #0d5ead;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #094b8c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Emotion Detector</h1>
+
+        <form action="/emotionDetector" method="get">
+
+            <label for="textToAnalyze">
+                Enter a sentence:
+            </label>
+
+            <input
+                type="text"
+                id="textToAnalyze"
+                name="textToAnalyze"
+                placeholder="Example: I am very happy today"
+            >
+
+            <button type="submit">
+                Analyze Emotion
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
